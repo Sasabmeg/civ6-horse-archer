@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-  <!-- Almost all gameplay types should first be added to the types table. -->
-  <!-- This serves as a central way to reference any type -->
-  <Types>
-    <Row Type="UNIT_PEON" Kind="KIND_UNIT" />
-  </Types>
+	<Types>
+		<Row Type="UNIT_HORSE_ARCHER" Kind="KIND_UNIT" />
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_HORSE_ARCHER" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_HORSE_ARCHER" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_HORSE_ARCHER" AiType="UNITTYPE_CAVALRY"/>
+		<Row UnitType="UNIT_HORSE_ARCHER" AiType="UNITTYPE_RANGED"/>
+		<Row UnitType="UNIT_HORSE_ARCHER" AiType="UNITTYPE_LAND_COMBAT"/>
+	</UnitAiInfos>
 
-  <!-- Define the actual unit here. For examples of additional properties and values, look at Units.xml in /Base/Assets/Gameplay/Data/-->
-  <Units>
-    <Row>
-      <UnitType>UNIT_PEON</UnitType>
-      <Name>LOC_UNIT_PEON_NAME</Name>
-      <Description>LOC_UNIT_PEON_DESCRIPTION</Description>
-      <BaseSightRange>3</BaseSightRange>
-      <BaseMoves>2</BaseMoves>
-      <Domain>DOMAIN_LAND</Domain>
-      <FormationClass>FORMATION_CLASS_CIVILIAN</FormationClass>
-      <Cost>20</Cost>
-    </Row>
-  </Units>
+	<TypeTags>
+		<Row Type="UNIT_HORSE_ARCHER" Tag="CLASS_RANGED_CAVALRY"/>
+		<Row Type="UNIT_HORSE_ARCHER" Tag="CLASS_MOBILE_RANGED"/>
+	</TypeTags>
+
+	<Units>
+		<Row
+			UnitType="UNIT_HORSE_ARCHER"
+			Cost="70"
+			Maintenance="1"
+			BaseMoves="4"
+			BaseSightRange="2"
+			ZoneOfControl="false"
+			Domain="DOMAIN_LAND"
+			Combat="20"
+			RangedCombat="28"
+			Range="1"
+			StrategicResource="RESOURCE_HORSES"
+			PrereqTech="TECH_HORSEBACK_RIDING"
+			FormationClass="FORMATION_CLASS_LAND_COMBAT"
+			PromotionClass="PROMOTION_CLASS_LIGHT_CAVALRY"
+			AdvisorType="ADVISOR_CONQUEST"
+			Name="LOC_UNIT_HORSE_ARCHER_NAME"
+			Description="LOC_UNIT_HORSE_ARCHER_DESCRIPTION"
+			PurchaseYield="YIELD_GOLD"
+			MandatoryObsoleteTech="TECH_SYNTHETIC_MATERIALS"
+		/>
+	</Units>
+	<Units_XP2>
+		<Row UnitType="UNIT_HORSE_ARCHER" ResourceCost="10"/>
+	</Units_XP2>
+	<UnitUpgrades>
+		<Row Unit="UNIT_HORSE_ARCHER" UpgradeUnit="UNIT_COURSER"/>
+	</UnitUpgrades>
 </GameData>
