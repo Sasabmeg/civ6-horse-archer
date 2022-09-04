@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <!-- Almost all gameplay types should first be added to the types table. -->
+  <!-- This serves as a central way to reference any type -->
+  <Types>
+    <Row Type="UNIT_PEON" Kind="KIND_UNIT" />
+  </Types>
+
+  <!-- Define the actual unit here. For examples of additional properties and values, look at Units.xml in /Base/Assets/Gameplay/Data/-->
+  <Units>
+    <Row>
+      <UnitType>UNIT_PEON</UnitType>
+      <Name>LOC_UNIT_PEON_NAME</Name>
+      <Description>LOC_UNIT_PEON_DESCRIPTION</Description>
+      <BaseSightRange>3</BaseSightRange>
+      <BaseMoves>2</BaseMoves>
+      <Domain>DOMAIN_LAND</Domain>
+      <FormationClass>FORMATION_CLASS_CIVILIAN</FormationClass>
+      <Cost>20</Cost>
+    </Row>
+  </Units>
+</GameData>

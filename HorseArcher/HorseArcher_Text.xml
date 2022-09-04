@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+    <!-- The name of the unit. -->
+    <Row Tag="LOC_UNIT_PEON_NAME" Language="en_US">
+      <Text>Peon</Text>
+    </Row>
+
+    <!-- It's description. -->
+    <Row Tag="LOC_UNIT_PEON_DESCRIPTION" Language="en_US">
+      <Text>A simple peon.</Text>
+    </Row>
+  </LocalizedText>
+</GameData>

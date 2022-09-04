@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>$name$</Name>
+    <Guid>7214957c-c75a-4484-ad1a-47442f78c223</Guid>
+    <ProjectGuid>ffd86093-0458-4b77-bf6b-c0982d1fb04b</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>This starter mod demonstrates how to create a new unit.</Teaser>
+    <Description>This starter mod demonstrates how to create a new unit.</Description>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <InGameActionData><![CDATA[
+      <InGameActions>
+        <UpdateArt id="Art">
+          <File>(Mod Art Dependency File)</File>
+        </UpdateArt>
+        <UpdateDatabase id="Gameplay">
+          <File>NewUnit_Gameplay.xml</File>
+        </UpdateDatabase>
+        <UpdateIcons id="Icons">
+          <File>NewUnit_Icons.xml</File>
+        </UpdateIcons>
+        <UpdateText id="Text">
+          <File>NewUnit_Text.xml</File>
+        </UpdateText>
+      </InGameActions>
+      ]]></InGameActionData>
+    <AssemblyName>HorseArcher</AssemblyName>
+    <RootNamespace>HorseArcher</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="ArtDefs\" />
+    <ArtDef Include="ArtDefs\Units.artdef" />
+    <None Include="HorseArcher.Art.xml" />
+    <None Include="GettingStarted.html" />
+    <Content Include="HorseArcher_Gameplay.xml" />
+    <Content Include="HorseArcher_Icons.xml" />
+    <Content Include="HorseArcher_Text.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
