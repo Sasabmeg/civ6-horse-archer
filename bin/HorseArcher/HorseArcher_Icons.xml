@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<IconDefinitions>
+		<Row Name="ICON_UNIT_HORSE_ARCHER" Atlas="ICON_ATLAS_UNITS" Index="36"/>
+		<Row Name="ICON_UNIT_HORSE_ARCHER_PORTRAIT" Atlas="ICON_ATLAS_UNIT_PORTRAITS" Index="34"/>
+	</IconDefinitions>
+</GameData>
