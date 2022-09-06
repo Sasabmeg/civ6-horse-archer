@@ -21,21 +21,21 @@ where UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 --------------------------------------------------------------
 --	Scythian Saka Horse Archer replaces common Horse Archer	--
 --------------------------------------------------------------
-delete from UnitReplaces where CivUniqueUnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER' and ReplacesUnitType = 'UNIT_HORSE_ARCHER';
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SCYTHIAN_HORSE_ARCHER', 'UNIT_HORSE_ARCHER');
+INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SCYTHIAN_HORSE_ARCHER', 'UNIT_HORSE_ARCHER');
 
 ----------------------------------------------
 --	Ranged Cavalry can move after attack	--
 ----------------------------------------------
---delete from Types where Type = 'ABILITY_MOVE_AFTER_ATTACK' and Kind = 'KIND_ABILITY';
-INSERT INTO Types (Type, Kind) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'KIND_ABILITY');
 
 --delete from UnitAbilities where UnitAbilityType = 'ABILITY_MOVE_AFTER_ATTACK';
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description, Inactive, ShowFloatTextWhenEarned, Permanent) 
+INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description, Inactive, ShowFloatTextWhenEarned, Permanent) 
 VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'LOC_ABILITY_MOVE_AFTER_ATTACK_NAME', 'LOC_ABILITY_MOVE_AFTER_ATTACK_DESCRIPTION', '0', '0', '1');
 
 --delete from UnitAbilityModifiers where UnitAbilityType = 'ABILITY_MOVE_AFTER_ATTACK' and ModifierId = 'MOD_MOVE_AFTER_ATTACKING';
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'MOD_MOVE_AFTER_ATTACKING');
+INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'MOD_MOVE_AFTER_ATTACKING');
+
+--delete from Types where Type = 'ABILITY_MOVE_AFTER_ATTACK' and Kind = 'KIND_ABILITY';
+INSERT OR IGNORE INTO Types (Type, Kind) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'KIND_ABILITY');
 
 --delete from TypeTags where Type = 'ABILITY_MOVE_AFTER_ATTACK' and Tag = 'CLASS_RANGED_CAVALRY';
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'CLASS_RANGED_CAVALRY');
+INSERT OR IGNORE INTO TypeTags (Type, Tag) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'CLASS_RANGED_CAVALRY');

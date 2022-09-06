@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<BaseGameText>
-		<Row Tag="LOC_ABILITY_MOVE_AFTER_ATTACK_NAME">
-			<Text>Hit and Run</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_MOVE_AFTER_ATTACK_DESCRIPTION">
-			<Text>Can move after attack.</Text>
-		</Row>		
 	</BaseGameText>
 	
-	
 	<LocalizedText>
-		<Row Tag="LOC_UNIT_HORSE_ARCHER_NAME" Language="en_US">
-			<Text>Horse Archer</Text>
-		</Row>
-		<Row Tag="LOC_UNIT_HORSE_ARCHER_DESCRIPTION" Language="en_US">
-			<Text>A cavalryman armed with a bow and able to shoot while riding from horseback. Your classical era anti-barbarian warfare at next level.</Text>
-		</Row>
 	</LocalizedText>
 </GameData>

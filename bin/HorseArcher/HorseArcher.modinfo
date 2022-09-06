@@ -3,7 +3,7 @@
   <Properties>
     <Name>Horse-Archer</Name>
     <Description>Classical era Horse Archer added to game. Scythian Saka Horse Archer boosted a bit, to stay relevant. (Ranged combat: 25 -&gt; 30, Maintenance cost: 2 -&gt; 1)</Description>
-    <Created>1662321674</Created>
+    <Created>1662484779</Created>
     <Teaser>Classical era Horse Archer added to game.</Teaser>
     <Authors>Sasabmeg</Authors>
     <Homepage>http://github.com/Sasabmeg/civ6-horse-archer</Homepage>
@@ -25,6 +25,7 @@
     </UpdateIcons>
     <UpdateText id="Text">
       <File>HorseArcher_Text.xml</File>
+      <File>HorseArcher_text.sql</File>
     </UpdateText>
   </InGameActions>
   <Files>
@@ -33,6 +34,7 @@
     <File>HorseArcher.dep</File>
     <File>HorseArcher_Gameplay.xml</File>
     <File>HorseArcher_Icons.xml</File>
+    <File>HorseArcher_text.sql</File>
     <File>HorseArcher_Text.xml</File>
   </Files>
 </Mod>
