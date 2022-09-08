@@ -25,13 +25,13 @@
 			BaseSightRange="2"
 			ZoneOfControl="false"
 			Domain="DOMAIN_LAND"
-			Combat="20"
-			RangedCombat="28"
+			Combat="15"
+			RangedCombat="25"
 			Range="1"
 			StrategicResource="RESOURCE_HORSES"
 			PrereqTech="TECH_HORSEBACK_RIDING"
 			FormationClass="FORMATION_CLASS_LAND_COMBAT"
-			PromotionClass="PROMOTION_CLASS_LIGHT_CAVALRY"
+			PromotionClass="PROMOTION_CLASS_RECON"
 			AdvisorType="ADVISOR_CONQUEST"
 			Name="LOC_UNIT_HORSE_ARCHER_NAME"
 			Description="LOC_UNIT_HORSE_ARCHER_DESCRIPTION"
@@ -43,6 +43,6 @@
 		<Row UnitType="UNIT_HORSE_ARCHER" ResourceCost="10"/>
 	</Units_XP2>
 	<UnitUpgrades>
-		<Row Unit="UNIT_HORSE_ARCHER" UpgradeUnit="UNIT_COURSER"/>
+		<Row Unit="UNIT_HORSE_ARCHER" UpgradeUnit="UNIT_SKIRMISHER"/>
 	</UnitUpgrades>
 </GameData>

@@ -15,7 +15,7 @@
 ------------------------------------------------------
 
 update Units
-set RangedCombat = 30, Maintenance= 1
+set RangedCombat = 28, Maintenance= 1
 where UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 --------------------------------------------------------------
@@ -32,7 +32,7 @@ INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description, Inactiv
 VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'LOC_ABILITY_MOVE_AFTER_ATTACK_NAME', 'LOC_ABILITY_MOVE_AFTER_ATTACK_DESCRIPTION', '0', '0', '1');
 
 --delete from UnitAbilityModifiers where UnitAbilityType = 'ABILITY_MOVE_AFTER_ATTACK' and ModifierId = 'MOD_MOVE_AFTER_ATTACKING';
-INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'MOD_MOVE_AFTER_ATTACKING');
+INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'FADE_BONUS_MOVE_AFTER_ATTACKING');
 
 --delete from Types where Type = 'ABILITY_MOVE_AFTER_ATTACK' and Kind = 'KIND_ABILITY';
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'KIND_ABILITY');
