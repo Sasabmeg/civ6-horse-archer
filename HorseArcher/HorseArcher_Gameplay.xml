@@ -21,7 +21,7 @@
 			UnitType="UNIT_HORSE_ARCHER"
 			Cost="70"
 			Maintenance="1"
-			BaseMoves="4"
+			BaseMoves="3"
 			BaseSightRange="2"
 			ZoneOfControl="false"
 			Domain="DOMAIN_LAND"
